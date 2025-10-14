@@ -1,0 +1,283 @@
+{
+  "@@locale": "es",
+  
+  "appTitle": "Pokédex",
+  "@appTitle": {
+    "description": "Título de la aplicación"
+  },
+
+  "home": "Inicio",
+  "@home": {
+    "description": "Etiqueta de la pestaña de inicio"
+  },
+
+  "regions": "Regiones",
+  "@regions": {
+    "description": "Etiqueta de la pestaña de regiones"
+  },
+
+  "favorites": "Favoritos",
+  "@favorites": {
+    "description": "Etiqueta de la pestaña de favoritos"
+  },
+
+  "profile": "Perfil",
+  "@profile": {
+    "description": "Etiqueta de la pestaña de perfil"
+  },
+
+  "searchPokemon": "Buscar Pokémon...",
+  "@searchPokemon": {
+    "description": "Placeholder del campo de búsqueda"
+  },
+
+  "noPokemonFound": "No se encontraron Pokémon",
+  "@noPokemonFound": {
+    "description": "Mensaje cuando no hay resultados de búsqueda"
+  },
+
+  "retry": "Reintentar",
+  "@retry": {
+    "description": "Botón para reintentar una acción"
+  },
+
+  "errorPage": "Algo salió mal...",
+  "@error": {
+    "description": "Mensaje cuando sucede algun error"
+  },
+
+  "errorLoadingFavorites": "Error al cargar favoritos",
+  "@errorLoadingFavorites": {
+    "description": "Error al cargar la lista de favoritos"
+  },
+
+  "noFavorites": "No tienes Pokémon favoritos",
+  "@noFavorites": {
+    "description": "Mensaje cuando no hay favoritos"
+  },
+
+  "addFavoritesMessage": "Agrega tus Pokémon favoritos para verlos aquí",
+  "@addFavoritesMessage": {
+    "description": "Mensaje descriptivo para agregar favoritos"
+  },
+
+  "comingSoon": "¡Muy pronto disponible!",
+  "@comingSoon": {
+    "description": "Mensaje para funcionalidades futuras"
+  },
+
+  "regionsFeatureMessage": "Estamos trabajando para traerte esta sección. Vuelve más adelante para descubrir todas las novedades.",
+  "@regionsFeatureMessage": {
+    "description": "Mensaje de funcionalidad de regiones próximamente"
+  },
+
+  "profileFeatureMessage": "La funcionalidad de perfil estará disponible en una futura actualización.",
+  "@profileFeatureMessage": {
+    "description": "Mensaje de funcionalidad de perfil próximamente"
+  },
+
+  "onboardingTitle1": "Todos los Pokémon en un solo lugar",
+  "@onboardingTitle1": {
+    "description": "Título de la primera página de onboarding"
+  },
+
+  "onboardingDescription1": "Accede a una amplia lista de Pokémon de todas las generaciones creadas por Nintendo",
+  "@onboardingDescription1": {
+    "description": "Descripción de la primera página de onboarding"
+  },
+
+  "onboardingTitle2": "Mantén tu Pokédex actualizada",
+  "@onboardingTitle2": {
+    "description": "Título de la segunda página de onboarding"
+  },
+
+  "onboardingDescription2": "Regístrate y guarda tu perfil, Pokémon favoritos, configuraciones y mucho más en la aplicación",
+  "@onboardingDescription2": {
+    "description": "Descripción de la segunda página de onboarding"
+  },
+
+  "onboardingFinish": "Empecemos",
+    "@onboardingFinish": {
+    "description": "Descripción del boton finalizar recorrido de onboarding"
+  },
+
+  "onboardingNext": "Continuar",
+  "@onboardingNext": {
+    "description": "Descripción del boton continual recorrido de onboarding"
+  },
+
+  "skip": "Saltar",
+  "@skip": {
+    "description": "Botón para saltar el onboarding"
+  },
+
+  "next": "Siguiente",
+  "@next": {
+    "description": "Botón para ir a la siguiente página"
+  },
+
+  "start": "Comenzar",
+  "@start": {
+    "description": "Botón para comenzar a usar la app"
+  },
+
+  "action": "Acción",
+  "@action": {
+    "description": "Etiqueta genérica de acción"
+  },
+
+  "settings": "Configuración",
+  "@settings": {
+    "description": "Título de la sección de configuración"
+  },
+
+  "theme": "Tema",
+  "@theme": {
+    "description": "Etiqueta para cambiar tema"
+  },
+
+  "darkMode": "Modo Oscuro",
+  "@darkMode": {
+    "description": "Etiqueta para modo oscuro"
+  },
+
+  "lightMode": "Modo Claro",
+  "@lightMode": {
+    "description": "Etiqueta para modo claro"
+  },
+
+  "systemMode": "Sistema",
+  "@systemMode": {
+    "description": "Etiqueta para modo del sistema"
+  },
+
+  "data": "Datos",
+  "@data": {
+    "description": "Título de la sección de datos"
+  },
+
+  "clearLocalData": "Limpiar datos locales",
+  "@clearLocalData": {
+    "description": "Botón para limpiar datos locales"
+  },
+
+  "clearDataDescription": "Eliminar favoritos, preferencias y restablecer el onboarding",
+  "@clearDataDescription": {
+    "description": "Descripción de limpiar datos"
+  },
+
+  "confirmClearData": "¿Estás seguro de que deseas eliminar todos los datos locales?",
+  "@confirmClearData": {
+    "description": "Mensaje de confirmación para limpiar datos"
+  },
+
+  "cancel": "Cancelar",
+  "@cancel": {
+    "description": "Botón cancelar"
+  },
+
+  "confirm": "Confirmar",
+  "@confirm": {
+    "description": "Botón confirmar"
+  },
+
+  "dataCleared": "Datos eliminados exitosamente",
+  "@dataCleared": {
+    "description": "Mensaje de éxito al limpiar datos"
+  },
+
+  "error": "Error",
+  "@error": {
+    "description": "Título de error"
+  },
+
+  "errorClearingData": "Error al limpiar los datos",
+  "@errorClearingData": {
+    "description": "Mensaje de error al limpiar datos"
+  },
+
+  "weight": "Peso",
+  "@weight": {
+    "description": "Etiqueta de peso"
+  },
+
+  "height": "Altura",
+  "@height": {
+    "description": "Etiqueta de altura"
+  },
+
+  "category": "Categoría",
+  "@category": {
+    "description": "Etiqueta de categoría"
+  },
+
+  "ability": "Habilidad",
+  "@ability": {
+    "description": "Etiqueta de habilidad"
+  },
+
+  "gender": "Género",
+  "@gender": {
+    "description": "Etiqueta de género"
+  },
+
+  "about": "Acerca de",
+  "@about": {
+    "description": "Título de la sección acerca de"
+  },
+
+  "genderless": "Sin género",
+  "@genderless": {
+    "description": "Pokémon sin género"
+  },
+
+  "weaknesses": "Debilidades",
+  "@weaknesses": {
+    "description": "Título de la sección de debilidades"
+  },
+
+  "stats": "Estadísticas",
+  "@stats": {
+    "description": "Título de la sección de estadísticas"
+  },
+
+  "hp": "PS",
+  "@hp": {
+    "description": "Puntos de salud"
+  },
+
+  "attack": "Ataque",
+  "@attack": {
+    "description": "Estadística de ataque"
+  },
+
+  "defense": "Defensa",
+  "@defense": {
+    "description": "Estadística de defensa"
+  },
+
+  "specialAttack": "At. Esp.",
+  "@specialAttack": {
+    "description": "Ataque especial"
+  },
+
+  "specialDefense": "Def. Esp.",
+  "@specialDefense": {
+    "description": "Defensa especial"
+  },
+
+  "speed": "Velocidad",
+  "@speed": {
+    "description": "Estadística de velocidad"
+  },
+
+  "male": "Macho",
+  "@male": {
+    "description": "Género masculino"
+  },
+
+  "female": "Hembra",
+  "@female": {
+    "description": "Género femenino"
+  }
+}

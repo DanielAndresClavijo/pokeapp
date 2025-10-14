@@ -1,65 +1,45 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:pokeapp/common/extensions/context_extension.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
+import 'package:pokeapp/core/di/injection.dart';
+import 'package:pokeapp/core/widgets/loading_indicator.dart';
+import 'package:pokeapp/domain/usecases/get_onboarding_completed_usecase.dart';
 
-class SplashPage extends StatefulWidget {
+class SplashPage extends ConsumerStatefulWidget {
   const SplashPage({super.key});
 
   @override
-  State<SplashPage> createState() => _SplashPageState();
+  ConsumerState<SplashPage> createState() => _SplashPageState();
 }
 
-class _SplashPageState extends State<SplashPage> with SingleTickerProviderStateMixin {
-  late final AnimationController _controller;
-  late Animation<double> animation;
+class _SplashPageState extends ConsumerState<SplashPage> {
 
   @override
   void initState() {
     super.initState();
-    _controller = AnimationController(
-      vsync: this,
-      duration: const Duration(milliseconds: 1500),
-    )..repeat();
-    animation = Tween<double>(begin: 0, end: 1).animate(_controller);
+    _navigateToNextScreen();
   }
+
+  Future<void> _navigateToNextScreen() async {
+    await Future.delayed(const Duration(seconds: 2));
+    
+    if (!mounted) return;
+    
+    final getOnboardingCompleted = getIt<GetOnboardingCompletedUseCase>();
+    final isOnboardingCompleted = await getOnboardingCompleted();
+    
+    if (!mounted) return;
+    
+    if (isOnboardingCompleted) {
+      context.go('/home');
+    } else {
+      context.go('/onboarding');
+    }
+  }
+
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: AnimatedBuilder(
-          animation: _controller,
-          builder: (context, child) {
-            return Transform.scale(
-              scale: 1 + (0.2 * animation.value),
-              child: DecoratedBox(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(100),
-                  boxShadow: [
-                    BoxShadow(
-                      color: context.colors.azulNormal.withValues(
-                        alpha: 0.6 - (0.6 * animation.value),
-                      ),
-                      blurRadius: 20 * animation.value,
-                      spreadRadius: 15 * animation.value,
-                      blurStyle: BlurStyle.inner,
-                    ),
-                  ],
-                ),
-                child: Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: child,
-                ),
-              ),
-            );
-          },
-          child: SvgPicture.asset(
-            context.assets.loader,
-            width: 155,
-            height: 155,
-          ),
-        ),
-      ),
-    );
+    return const Scaffold(body: Center(child: LoadingIndicator(size: 155)));
   }
 }
