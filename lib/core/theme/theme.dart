@@ -268,7 +268,7 @@ ThemeData get _dark => ThemeData(
       primaryColor: const Color(0xFF90CAF9),
       primaryColorDark: const Color(0xFF82B1FF),
       primaryColorLight: const Color(0xFF90CAF9),
-      scaffoldBackgroundColor: const Color(0xFF121212),
+      scaffoldBackgroundColor: const ColorsApp.dark().surfaceDefault,
       secondaryHeaderColor: const Color(0xFF1565C0),
       shadowColor: const Color(0x0000001F),
       splashColor: const Color(0xFF42A5F5),
@@ -317,7 +317,19 @@ ThemeData get _dark => ThemeData(
       dividerTheme: null,
       drawerTheme: null,
       dropdownMenuTheme: null,
-      elevatedButtonTheme: null,
+      elevatedButtonTheme: ElevatedButtonThemeData(
+        style: ElevatedButton.styleFrom(
+          backgroundColor: const ColorsApp.dark().buttonPrimaryDefaultBg,
+          foregroundColor: const ColorsApp.dark().textPrimary,
+          textStyle: const AppFonts.dark().headlineMedium?.copyWith(
+                fontWeight: FontWeight.w600,
+              ),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(100),
+          ),
+          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+        ),
+      ),
       expansionTileTheme: null,
       filledButtonTheme: null,
       floatingActionButtonTheme: null,
