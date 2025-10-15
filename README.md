@@ -1,7 +1,7 @@
 # 🎮 PokeApp - Aplicación Flutter con Clean Architecture
 
 <p align="center">
-  <img src="assets/images_svg/pokeball.svg" alt="Pokeball" width="100"/>
+  <img src="./assets/images_svg/pokeball.svg" alt="Pokeball" width="100"/>
 </p>
 
 <p align="center">
@@ -18,6 +18,8 @@
   <a href="#-ia-en-el-desarrollo">IA</a> •
   <a href="#-seguridad">Seguridad</a>
 </p>
+
+https://github.com/user-attachments/assets/c0a8e3ef-c928-49bc-9275-afd5ab487c1a
 
 ---
 
