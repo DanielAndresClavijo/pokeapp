@@ -41,18 +41,18 @@ void main() {
     test('debe retornar Pokemon cuando el use case es exitoso', () async {
       // Arrange
       const pokemonId = 1;
-      final pokemon = Pokemon(
+      const pokemon = Pokemon(
         id: pokemonId,
         name: 'bulbasaur',
         height: 7,
         weight: 69,
         baseExperience: 64,
-        abilities: const ['overgrow', 'chlorophyll'],
-        sprites: const PokemonSprites(
+        abilities: ['overgrow', 'chlorophyll'],
+        sprites: PokemonSprites(
           frontDefault: 'https://example.com/bulbasaur.png',
         ),
-        types: const ['grass', 'poison'],
-        stats: const PokemonStats(
+        types: ['grass', 'poison'],
+        stats: PokemonStats(
           hp: 45,
           attack: 49,
           defense: 49,
@@ -96,18 +96,18 @@ void main() {
       const pokemonId1 = 1;
       const pokemonId2 = 25;
       
-      final pokemon1 = Pokemon(
+      const pokemon1 = Pokemon(
         id: pokemonId1,
         name: 'bulbasaur',
         height: 7,
         weight: 69,
         baseExperience: 64,
-        abilities: const ['overgrow', 'chlorophyll'],
-        sprites: const PokemonSprites(
+        abilities: ['overgrow', 'chlorophyll'],
+        sprites: PokemonSprites(
           frontDefault: 'https://example.com/bulbasaur.png',
         ),
-        types: const ['grass', 'poison'],
-        stats: const PokemonStats(
+        types: ['grass', 'poison'],
+        stats: PokemonStats(
           hp: 45,
           attack: 49,
           defense: 49,
@@ -117,18 +117,18 @@ void main() {
         ),
       );
 
-      final pokemon2 = Pokemon(
+      const pokemon2 = Pokemon(
         id: pokemonId2,
         name: 'pikachu',
         height: 4,
         weight: 60,
         baseExperience: 112,
-        abilities: const ['static', 'lightning-rod'],
-        sprites: const PokemonSprites(
+        abilities: ['static', 'lightning-rod'],
+        sprites: PokemonSprites(
           frontDefault: 'https://example.com/pikachu.png',
         ),
-        types: const ['electric'],
-        stats: const PokemonStats(
+        types: ['electric'],
+        stats: PokemonStats(
           hp: 35,
           attack: 55,
           defense: 40,

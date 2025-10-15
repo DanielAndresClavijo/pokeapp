@@ -26,7 +26,7 @@ class ProfileScreen extends ConsumerWidget {
         ref.read(profileViewModelProvider.notifier).clearMessages();
         // Navigate to onboarding after clearing data
         Future.delayed(const Duration(seconds: 1), () {
-          context.go('/onboarding');
+          if (context.mounted) context.go('/onboarding');
         });
       }
       if (next.errorMessage != null) {
